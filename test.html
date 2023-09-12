@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Komentar ke WhatsApp</title>
+</head>
+<body>
+    <h1>Komentar/Saran Anda</h1>
+    <form id="komentarForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+        
+        <label for="komentar">Komentar/Saran:</label>
+        <textarea id="komentar" name="komentar" rows="4" required></textarea><br><br>
+        
+        <button type="button" id="submitBtn">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function () {
+            // Mengambil data dari formulir
+            var nama = document.getElementById("nama").value;
+            var komentar = document.getElementById("komentar").value;
+            
+            // Membentuk pesan WhatsApp dengan data yang diisi oleh pengguna
+            var pesanWhatsApp = "Nama: " + nama + "%0A" + "Komentar/Saran: " + komentar;
+            
+            // Redirect ke WhatsApp
+            window.location.href = "https://api.whatsapp.com/send?phone=Nomor-WhatsApp-Anda&text=" + pesanWhatsApp;
+        });
+    </script>
+</body>
+</html>

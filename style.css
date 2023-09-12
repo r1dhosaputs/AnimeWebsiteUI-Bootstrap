@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+nav {
+  font-family: "Poppins", sans-serif !important;
+}
+
+section#new-anime {
+  font-family: 'Bebas Neue', sans-serif !important;
+}
+
+section#about-dev,section#saran {
+  font-family: "Poppins", sans-serif !important;
+}
+
+section h1#costum-about-dev,section h1#saran-costum {
+  font-family: 'Bebas Neue', sans-serif !important;
+}
+
+.costum-size-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 60px;
+}
+
+.costum-cursor {
+  cursor: pointer;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+/* Splide JS COSTUM */
+/* Splide Adapt Img Size */
+.splide__slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Gaya untuk tombol slide prev dan next */
+.splide__arrow--next {
+  margin-right: 13rem;
+}
+
+.splide__arrow--prev {
+  margin-left: 13rem; /* Tambahkan margin kiri sesuai keinginan */
+}
+
+.splide__pagination {
+  margin-bottom: 1rem;
+}
+
+/* Fix Overlap Bootstrap 5 */
+body {
+  padding-top: 60px !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.45rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Costum Anime-List */
+#new-anime {
+  padding-top: 3rem;
+}
+
+#about-dev {
+  padding-top: 3rem;
+}
+
+#saran {
+  padding-top: 3rem;
+}
+
+.card-img-costum {
+  background-color: antiquewhite;
+  background-size: cover;
+  width: 175px;
+  height: 240px;
+  cursor: pointer;
+}
+
+.card-img-costum.satu {
+  background-image: url(https://otakudesu.lol/wp-content/uploads/2023/07/Nanatsu-no-Maken-ga-Shihai-suru-211x300.jpg);
+}
+
+.card-img-costum.dua {
+  background-color: #ffff;
+  background-image: url(https://otakudesu.lol/wp-content/uploads/2023/07/Shiro-Seijo-to-Kuro-Bokushi-212x300.jpg);
+}
+
+#play-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #eaeaea;
+  width: 30%;
+  height: 30%;
+}
+
+.hover-dark {
+  background-color: rgba(0, 0, 0, 0.5); /* Hitam dengan transparansi 0.5 */
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.costum-parent-img {
+  overflow: hidden;
+}
+
+.costum-scale-img:hover {
+  transform-origin: center center;
+  transform: scale(1.2);
+}
+
+.costum-rounded {
+  border-top-left-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+.hover-dark.active {
+  display: block !important;
+}
+
+#play-icon.active {
+  display: block;
+}
+
+.animerecomended {
+  max-width: 340px;
+}
+
+#profile-overflow-hidden {
+  overflow: hidden;
+}
+
+#my-profile-picture {
+  width: 270px;
+  height: 300px;
+  transform: scale(1.1);
+}
+
+
+/* Costum Media Query
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Gaya CSS untuk tablet */
+  .splide__arrow--next {
+    margin-right: 3rem;
+  }
+
+  .splide__arrow--prev {
+    margin-left: 3rem;
+  }
+}
+
+/* HP */
+@media (max-width: 767.98px) {
+  /* Gaya CSS untuk perangkat mobile */
+  .splide__arrow--next {
+    margin-right: 0rem;
+  }
+
+  .card-img-costum {
+    width: 150.4px;
+    height: 240px;
+    background-position: -20px 20px;
+  }
+
+  .splide__arrow--prev {
+    margin-left: 0rem;
+  }
+
+  #new-anime {
+    padding-top: 0rem;
+  }
+
+  .animerecomended {
+    max-width: 170px;
+  }
+}

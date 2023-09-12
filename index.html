@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Icon Logo -->
+  <link rel="icon" href="assets/logo.jpg" type="image/icon type">
+  <title>Anime</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <!-- Splide JS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Feathers Icon -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="bg-dark">
+  <!-- navigasi -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-lg p-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3 pe-2" href="#">DhoNime.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav nav-underline mx-auto pe-3 pt-2">
+          <li class="nav-item">
+            <a class="nav-link text-light fs-5 fw-medium px-5 " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fs-5 fw-medium px-5" aria-current="page" href="#new-anime">Anime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fs-5 fw-medium px-5" aria-current="page" href="#about-dev">About Dev</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fs-5 fw-medium px-5" aria-current="page" href="#saran">Saran</a>
+          </li>
+        </ul>
+        <form class="d-flex pt-2" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cari Anime" aria-label="Cari" autofocus>
+          <button class="btn btn-outline-light" type="submit"><i data-feather="search"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero section carousel -->
+  <section id="image-carousel" class="splide shadow-lg" aria-label="Beautiful Images">
+    <!-- 
+    <div class="splide__arrows">
+      <button class="splide__arrow splide__arrow--prev">
+        <i data-feather="chevrons-right"></i>
+      </button>
+      <button class="splide__arrow splide__arrow--next">
+        <i data-feather="chevrons-right"></i>
+      </button>
+    </div> -->
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="assets/rin.png" alt="">
+        </li>
+        <li class="splide__slide">
+          <img src="assets/saber.jpg" alt="">
+        </li>
+        <li class="splide__slide">
+          <img src="assets/matousakura.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- new anime -->
+  <section id="new-anime">
+    <div class="container mt-5 text-light">
+      <div class="row">
+
+        <div class="col-md-8">
+          <h1 class="mb-3 ms-3 fw-medium">On-Going Anime</h1>
+          <div class="list-new-anime d-flex flex-wrap d-block mx-auto justify-content-center">
+
+            <div class="card border border-0 p-2 bg-transparent " id="card-bootstrap">
+              <div class="card-img-top rounded card-img-costum satu">
+                <div class="text-light ps-2 pt-2 pb-2 pe-2 fw-medium bg-dark col-md-7 position-absolute costum-rounded">
+                  Episode 21
+                </div>
+
+                <a href="">
+                  <div class="hover-dark">
+                    <div class="bg-transparent position-absolute bottom-0">
+                      <div class="p-3 text-light rounded fw-medium fs-5">
+                        Nanatsu no Maken ga Shihai suru
+                      </div>
+                    </div>
+                  </div>
+                  <i data-feather="play" id="play-icon"></i>
+                </a>
+
+
+              </div>
+
+            </div>
+
+            <div class="card border border-0 p-2 bg-transparent" id="card-bootstrap">
+              <div class="card-img-top rounded card-img-costum dua">
+                <div class="text-light ps-2 pt-2 pb-2 pe-2 fw-medium bg-dark col-md-7 position-absolute costum-rounded">
+                  Episode 15
+                </div>
+                <a href="">
+                  <div class="hover-dark">
+                    <div class="bg-transparent position-absolute bottom-0">
+                      <div class="p-3 text-light rounded fw-medium fs-5">
+                        Shiro Seijo to Kuro Bokushi
+                      </div>
+                    </div>
+                  </div>
+                  <i data-feather="play" id="play-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="card border border-0 p-2 bg-transparent" id="card-bootstrap">
+              <div class="card-img-top rounded card-img-costum tiga">
+                <div class="text-light ps-2 pt-2 pb-2 pe-2 fw-medium bg-dark col-md-7 position-absolute costum-rounded">
+                  Episode 7</div>
+                <a href="">
+                  <div class="hover-dark">
+                    <div class="bg-transparent position-absolute bottom-0">
+                      <div class="p-3 text-light rounded fw-medium fs-5">
+                        ###
+                      </div>
+                    </div>
+                  </div>
+                  <i data-feather="play" id="play-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="card border border-0 p-2 bg-transparent" id="card-bootstrap">
+              <div class="card-img-top rounded card-img-costum empat">
+                <div class="text-light ps-2 pt-2 pb-2 pe-2 fw-medium bg-dark col-md-7 position-absolute costum-rounded">
+                  Episode 5</div>
+                <a href="">
+                  <div class="hover-dark">
+                    <div class="bg-transparent position-absolute bottom-0">
+                      <div class="p-3 text-light rounded fw-medium fs-5">
+                        ###
+                      </div>
+                    </div>
+                  </div>
+                  <i data-feather="play" id="play-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="card border border-0 p-2 bg-transparent" id="card-bootstrap">
+              <div class="card-img-top rounded card-img-costum lima">
+                <div class="text-light ps-2 pt-2 pb-2 pe-2 fw-medium bg-dark col-md-7 position-absolute costum-rounded">
+                  Episode 1</div>
+                <a href="">
+                  <div class="hover-dark">
+                    <div class="bg-transparent position-absolute bottom-0">
+                      <div class="p-3 text-light rounded fw-medium fs-5">
+                        ###
+                      </div>
+                    </div>
+                  </div>
+                  <i data-feather="play" id="play-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="card border border-0 p-2 bg-transparent" id="card-bootstrap">
+              <div class="card-img-top rounded card-img-costum enam">
+                <div class="text-light ps-2 pt-2 pb-2 pe-2 fw-medium bg-dark col-md-7 position-absolute costum-rounded">
+                  Episode 27
+                </div>
+                <a href="">
+                  <div class="hover-dark">
+                    <div class="bg-transparent position-absolute bottom-0">
+                      <div class="p-3 text-light rounded fw-medium fs-5">
+                        ###
+                      </div>
+                    </div>
+                  </div>
+                  <i data-feather="play" id="play-icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="card border border-0 p-2 bg-transparent" id="card-bootstrap">
+              <div class="card-img-top rounded card-img-costum tujuh">
+                <div class="text-light ps-2 pt-2 pb-2 pe-2 fw-medium bg-dark col-md-7 position-absolute costum-rounded">
+                  Episode 11
+                </div>
+                <a href="">
+                  <div class="hover-dark">
+                    <div class="bg-transparent position-absolute bottom-0">
+                      <div class="p-3 text-light rounded fw-medium fs-5">
+                        ###
+                      </div>
+                    </div>
+                  </div>
+                  <i data-feather="play" id="play-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="pt-4 mt-5 ms-3 p-4">
+              <a href="" style="text-decoration: none;">
+                <i data-feather="chevrons-right" class="ms-3 mt-5 text-light"
+                  style="cursor: pointer; transform: scale(2);"></i>
+                <i data-feather="chevrons-right" class="mt-5 text-light"
+                  style="cursor: pointer; transform: scale(2);"></i>
+                <h4 class="text-white mt-2 ms-3 ">Lainnya</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Anime Rekomendasi -->
+        <div class="col-md-4 mt-3">
+          <h3 class="mb-3 ms-5 fw-medium">Anime Recomended :</h3>
+          <div class="row mt-4 justify-content-center">
+
+            <div class="card text-bg-light mb-3 p-0 animerecomended mx-1" id="">
+              <div class="row g-0">
+                <div class="col-md-5 costum-parent-img">
+                  <a href=""><img src="https://samehadaku.bond/wp-content/uploads/2021/12/poster-boruto.jpg"
+                      class="img-fluid rounded-start costum-scale-img" alt="###"></a>
+                </div>
+                <div class="col-md-7 pt-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Boruto</h5>
+                    <p class="card-text"><span class="fw-bold">Genre : </span>Action, Adventure</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card text-bg-light mb-3 p-0 animerecomended mx-1" id="">
+              <div class="row g-0">
+                <div class="col-md-5 costum-parent-img">
+                  <a href=""><img src="https://samehadaku.bond/wp-content/uploads/2021/10/118763l.jpg"
+                      class="img-fluid rounded-start costum-scale-img" alt="###"></a>
+                  <div class="costum-img-hover"></div>
+                </div>
+                <div class="col-md-7 pt-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Kimetsu No Yaiba</h5>
+                    <p class="card-text"><span class="fw-bold">Genre : </span>Action, Fantasy</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 2 days ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+  <section id="about-dev" class="mx-auto">
+    <h1 class="text-center text-light mt-5" id="costum-about-dev">ABOUT DEV</h1>
+    <div class="container mt-3 bg-secondary text-light rounded p-4 mx-auto">
+
+      <div class="row">
+        <div class="col-md-3" id="profile-overflow-hidden">
+          <img src="assets/me.jpg" class="img-fluid rounded d-block mx-auto" alt="#" id="my-profile-picture">
+        </div>
+        <div class="col-md-5 p-3">
+          <h1 class="">Personal Identity</h1>
+          <div class="mt-3 ms-3">
+            <p class="m-0 col">Name : Muhammad Ridho Saputra</p>
+            <p class="m-0 col">Old : XXX Years Old</p>
+            <p class="m-0 col">Hobby : Guitar,Anime</p>
+          </div>
+        </div>
+        <div class="col-md-4 pe-5 pt-3">
+          <h3 class="mt-2 mb-4">Social Media</h3>
+          <div class="mt-3 ms-3">
+            <div class="col-md-4 mb-5">
+              <div class="d-flex">
+                <a href="https://www.instagram.com/ridhosaputs" target="__blank" class="d-flex text-decoration-none"><i
+                    data-feather="instagram" class="text-light" style="transform:scale(1.7);"></i>
+                  <h5 class="ms-3 text-light ">@ridhosaputs</h5>
+                </a>
+              </div>
+
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="d-flex">
+                <a href="https://www.instagram.com/ridhosaputs" target="__blank" class="d-flex text-decoration-none"><i
+                    data-feather="github" class="text-light" style="transform:scale(1.7);"></i>
+                  <h5 class="ms-3 text-light ">@r1dhosaputs</h5>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="d-flex">
+                <a href="https://www.instagram.com/ridhosaputs" target="__blank" class="d-flex text-decoration-none"><i
+                    data-feather="youtube" class="text-light" style="transform:scale(1.7);"></i>
+                  <h5 class="ms-3 text-light ">@ridhosaputs</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Saran -->
+  <section id="saran">
+    <div class="container mt-5">
+      <div class="col-md-4 mx-auto">
+        <h1 class="text-center text-light" id="saran-costum">Saran :</h1>
+        <form action="" method="get" class="text-light">
+          <div class="mb-3">
+            <label for="user" class="form-label fs-5 fw-medium">Namamu :</label>
+            <input type="text" name="user" id="user" class="form-control" placeholder="Nama">
+          </div>
+          <div class="mb-3">
+            <label for="user-comment" class="form-label fs-5 fw-medium">Komentar :</label>
+            <textarea name="user-comment" id="user-comment" class="form-control" rows="5"
+              placeholder="Masukkan Komentar Mu...."></textarea>
+          </div>
+          <a href="maaf.html" class="btn btn-primary" id="submitBtn">Kirim</a>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer biasa -->
+  <footer id="footer" class="mt-5">
+    <div class="bg-primary py-2">
+      <div class="container">
+        <div class="pt-3 mt-3">
+          <p class="text-center text-light fw-medium">
+            <<< MAKE WITH LOVE >>>
+          </p>
+          <p class="text-center text-light">© 2023 Ridho</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <!-- SplideJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#image-carousel', {
+        type: 'loop', // Opsi loop
+        autoplay: true, // Mengaktifkan auto slide
+        interval: 3000, // Interval auto slide dalam milidetik (misalnya 3000 untuk 3 detik)
+        heightRatio: 0.48,
+      }).mount();
+    });
+  </script>
+  <!-- Feather Icon -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
